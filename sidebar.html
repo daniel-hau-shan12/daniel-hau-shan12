@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/094537f251.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cdbootstrap/css/cdb.min.css" />
+    <title>Bootstrap Side Bar</title>
+    <style>
+        .nav-pills li a:hover{
+            background-color: blue;
+        }
+        i{
+            color: black;
+        }
+        .daniel{
+            border: 1px solid black;
+            border-radius: 3px;
+        }
+        .daniel2{
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container" style="padding: 20px;">
+        <div class="" style="display: flex;">
+            <div class="bg-white col-auto col-md-4 col-lg-3 min-vh-80 d-flex flex-column justify-content-between daniel">
+                <div class="bg-white p-2">
+                    <a class="d-flex text-decoration-none mt-1 align-items-center text-white">
+                        <span class="fs-4 d-none d-sm-inline" style="color: blue;">SideMenu</span>
+                    </a>
+                    <ul class="nav nav-pills flex-column mt-4">
+                        <li class="nav-item py-2 py-sm-0">
+                            <a href="" class="nav-link">
+                                <i class="fs-5 fa-solid fa-table-columns"></i><span class="fs-4 ms-3 d-none d-sm-inline" style="color: black;">Dashboard</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-2 py-sm-0">
+                            <a href="" class="nav-link">
+                                <i class="fs-5 fa fa-house"></i><span class="fs-4 ms-3 d-none d-sm-inline" style="color: black;">Home</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-2 py-sm-0">
+                            <a href="" class="nav-link">
+                                <i class="fs-5 fa fa-table-list"></i><span class="fs-4 ms-3 d-none d-sm-inline" style="color: black;">Articles</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-2 py-sm-0">
+                            <a href="" class="nav-link">
+                                <i class="fs-5 fa fa-table-list"></i><span class="fs-4 ms-3 d-none d-sm-inline" style="color: black;">Products</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-2 py-sm-0">
+                            <a href="" class="nav-link">
+                                <i class="fs-5 fa fa-clipboard"></i><span class="fs-4 ms-3 d-none d-sm-inline" style="color: black;">Orders</span>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item py-2 py-sm-0">
+                            <a href="" class="nav-link">
+                                <i class="fs-5 fa fa-users"></i><span class="fs-4 ms-3 d-none d-sm-inline" style="color: black;">Customers</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="dropdown open p-3">
+                    <button class="btn border-none dropdown-toggle text-white" type="button" id="triggerId" data-aria-expanded="false">
+                        <i class="fa fa-user"></i><span class="ms-2" style="color: black;">Daniel</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="triggerId">
+                        <button class="dropdown-item" href="#">Setting</button>
+                        <button class="dropdown-item" href="#">Profile</button>
+                    </div>
+                </div>
+            </div>
+            &nbsp;
+            &nbsp;
+
+            <!-- Content -->
+            <div class="daniel2" style="width: 1000px;">
+                <h2>Content Area</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/cdb.min.js"></script>
+</body>
+
+</html>
